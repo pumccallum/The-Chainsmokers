@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'roboto condensed', sans-serif
+}
+
+header {
+	background: lightgray;
+	padding: 20px;
+}
+
+header nav ul {
+	text-align: center;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 5px 20px;
+}
+
+.tcm_logo {
+	transform: scale(0.35);
+	margin: auto;
+}
+
+.page_tittle {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 6rem; 
+	color: #2B2C28; 
+	text-align: center; 
+}
+.artist	{
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 2rem; 
+	color: #51524F;
+}
+
+.tittle2 {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 3rem; 
+	color: #51524F;
+	text-align: center;
+}
+
+.show_place {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 2rem; 
+	color: #51524F;
+}
+
+ul {
+	list-style: none;
+}
+
+.contact_mail {
+	text-align: center
+}
+
+header nav ul li {
+	display:inline-block;
+}
