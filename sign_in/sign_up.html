@@ -2,6 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4, minimum-scale=1">
 		<title>The Chainsmokers Sign In</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -13,76 +14,87 @@
 	</head>
 	<body>
 		<header>
+			<i class="fas fa-bars"></i>
 			<nav>
 				<ul>
+					<i class="fas fa-times"></i>
 					<li>
-						<a href="../index.html">HOME</a>
+						<a href="../index.html" class="menu">HOME</a>
 					</li>
 					<li>
-						<a href="../shows/shows.html">SHOWS</a>
+						<a href="../shows/shows.html" class="menu">SHOWS</a>
 					</li>
 					<li>
-						<a href="../albums/albums.html">ALBUMS</a>
+						<a href="../albums/albums.html" class="menu">ALBUM</a>
 					</li>
 					<li>
-						<a href="../videos/videos.html">VIDEOS</a>
+						<a href="../videos/videos.html" class="menu">VIDEOS</a>
 					</li>
 					<li>
-						<a href="../sotre/store.html">STORE</a>
+						<a href="https://store.thechainsmokers.com/" target="_blank" class="menu">STORE</a>
 					</li>
 					<li>
-						<a href="../contact/contact.html">CONTACT</a>
+						<a href="../contact/contact.html" class="menu">CONTACT</a>
 					</li>
-					<li>
-						<a href="sign_in.html">SIGN IN</a>
+					<li class="now">
+						<a href="sign_in.html">ENTER</a>
+
+						<!-- <ul class="submenu">
+							<li><a href="sign_in.html" class="menu">SIGN IN</a></li>
+							<li><a href="sign_up.html" class="menu">SIGN UP</a></li>
+						</ul> -->
+
 					</li>
 				</ul>
 			</nav>
-			<h1 class="page_tittle"class="page_tittle">SIGN UP</h1>
+			
 		</header>
 		<main>
-			<form action="#" method="post">
-				<label>Name</label>
-				<input type="text" name="name" placeholder="Enter your name" required >
-				<label>Last name</label>
-				<input type="text" name="lastname" placeholder="Enter your lastname" required>
-				<label>Birthday</label>
-				<input type="date" name="date">
+			<section class="new_tittle">
+				<h1 class="page_tittle">Sign up</h1>
+			</section>
 
-				<label>Sex</label>
-				<input type="radio" name="sex" checked> Female
-				<input type="radio" name="sex">Male
-				<input type="radio" name="sex">Other
+			<section class="content2">
+				<form action="thank_you.html" method="post">
+					<input type="text" name="name" placeholder="Enter your name" required >
+					<input type="text" name="lastname" placeholder="Enter your lastname" required>
+					<input type="date" name="date">
 
-				<label>e-Mail</label>
-				<input type="email" name="email" placeholder="e-Mail" required>
-				<label>Password</label>
-				<input type="password" name="password" placeholder="Enter password" minlength="6" maxlength="12" required="
-				">
-				<label>Repeat password</label>
-				<input type="password" name="rep_password" placeholder="Repeat password" minlength="6" maxlength="12" required="">
-				<input type="checkbox" name="t&c" required>
-				<label> 
-					<a href="#">Accept terms and conditions</a>
-				</label>
-				<input type="submit" value="Sign up">
+					<div class="sex">
+						<label><input type="radio" name="sex" checked class="line">Female</label>
+						<label><input type="radio" name="sex" class="line">Male</label>
+						<label><input type="radio" name="sex" class="line">Other</label>
+					</div>
 
-				<!--Puedo hacer que las contraseñas tengan que coincidir si o si?-->
-				
-			</form>
+					<input type="email" name="email" placeholder="e-Mail" required>
+					<input type="password" name="password" placeholder="Enter password" minlength="6" maxlength="12" required="
+					">
+					<input type="password" name="rep_password" placeholder="Repeat password" minlength="6" maxlength="12" required="">
+					<label class="line">
+						<input type="checkbox" name="t&c" required class="line">
+						<a href="#" class="line">Accept terms and conditions</a></label>
+
+					<input type="submit" value="Sign up" class="send">
+
+				</form>
+			</section>
 		</main>
-		<footer>
-			<p>Copyright © 2018 The ChaLogo de The Chainsmokersinsmokers</p>
-			<p>All rights reserved</p>
-			<img src="imagenes/logo.jpg" alt="">
+
+		<footer class="footer_container">
+			<div>
+				<img src="../imagenes/logo.jpg" alt="The Chainsmokers Logo">
+				<section>
+					<p>Copyright © 2018 The Chainsmokers</p>
+					<p>All rights reserved</p>
+				</section>
+			</div>
 
 			<form action="#" method="post">
 				<label>Join to newsletter</label>
 				<input type="email" name="email_nl" placeholder="Enter your e-mail" required>
-				<input type="submit" value="Send" ">
+				<input type="submit" value="Send" class="send">
 			</form>
 
-			<!-- Las listas siempre tienen que estar adentro de <nav></nav> ? -->
 			<ul>
 				<li>
 
@@ -130,5 +142,8 @@
 				</li>
 			</ul>
 		</footer>
+
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
 </html>

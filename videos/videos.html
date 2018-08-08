@@ -2,6 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4, minimum-scale=1">
 		<title>The Chainsmokers Videos</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -13,40 +14,105 @@
 	</head>
 	<body>
 		<header>
+			<i class="fas fa-bars"></i>
 			<nav>
 				<ul>
+					<i class="fas fa-times"></i>
 					<li>
-						<a href="../index.html">HOME</a>
+						<a href="../index.html" class="menu">HOME</a>
 					</li>
 					<li>
-						<a href="../shows/shows.html">SHOWS</a>
+						<a href="../shows/shows.html" class="menu">SHOWS</a>
 					</li>
 					<li>
-						<a href="../albums/albums.html">ALBUMS</a>
+						<a href="../albums/albums.html" class="menu">ALBUM</a>
+					</li>
+					<li class="now">
+						<a href="videos.html" >VIDEOS</a>
 					</li>
 					<li>
-						<a href="videos.html">VIDEOS</a>
+						<a href="https://store.thechainsmokers.com/" class="menu" target="_blank">STORE</a>
 					</li>
 					<li>
-						<a href="../store/store.html">STORE</a>
+						<a href="../contact/contact.html" class="menu">CONTACT</a>
 					</li>
 					<li>
-						<a href="../contact/contact.html">CONTACT</a>
-					</li>
-					<li>
-						<a href="../sign_in/sign_in.html">SIGN IN</a>
+						<a href="../sign_in/sign_in.html" class="menu">ENTER</a>
+
+						<ul class="submenu">
+							<li><a href="../sign_in/sign_in.html" class="menu">SIGN IN</a></li>
+							<li><a href="../sign_in/sign_up.html" class="menu">SIGN UP</a></li>
+						</ul>
+
 					</li>
 				</ul>
 			</nav>
-			<h1 class="page_tittle">VIDEOS</h1>
+		
 		</header>
 		<main>
-			
+			<section class="new_tittle">
+				<h1 class="page_tittle">VIDEOS</h1>
+			</section>
+			<ul class="content ">
+				<li class="video">
+					<a href="https://www.youtube.com/watch?v=BOhylL90UVQ" target="_blank">
+						<img src="../imagenes/video1.jpg" class="video_img transform_song">
+					</a>
+					<p>Somebody ft. Drew Love</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=NxuoSNKrmv4" target="_blank">
+						<img src="../imagenes/video2.jpg" class="video_img transform_song">
+					</a>
+					<p>Somebody (Linn Cover)</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=86Z5TeUyD-g" target="_blank">
+						<img src="../imagenes/video3.jpg" class="video_img transform_song">
+					</a>
+					<p>Ultra Music Festival 2018</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=8wWywAlqez8" target="_blank">
+						<img src="../imagenes/video4.jpg" class="video_img transform_song">
+					</a>
+					<p>Humble (Live Cover)</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=2z0E1xVOQKg" target="_blank">
+						<img src="../imagenes/video5.jpg" class="video_img transform_song">
+					</a>
+					<p>SICK BOY EUROPE pt 1 - "That Time" #40</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=QR7CctPocMM" target="_blank">
+						<img src="../imagenes/video6.jpg" class="video_img transform_song">
+					</a>
+					<p>The Chainsmokers - Sick Boy (Preview)</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=Ira440a_IPo" target="_blank">
+						<img src="../imagenes/video7.jpg" class="video_img transform_song">
+					</a>
+					<p>Pull Me Closer Asia 2017 - "That Time" #39</p>
+				</li><!-- 
+			 --><li class="video">
+					<a href="https://www.youtube.com/watch?v=2-1qXGTm_EM" target="_blank">
+						<img src="../imagenes/video8.jpg" class="video_img transform_song">
+					</a>
+					<p>Memories... Do Not Open Tour Pt. 5 - "That Time" #38</p>
+				</li>	
+			</ul>
 		</main>
-		<footer>
-			<p>Copyright © 2018 The ChaLogo de The Chainsmokersinsmokers</p>
-			<p>All rights reserved</p>
-			<img src="imagenes/logo.jpg" alt="">
+
+		<footer class="footer_container">
+			<div>
+				<img src="../imagenes/logo.jpg" alt="The Chainsmokers Logo">
+				<section>
+					<p>Copyright © 2018 The Chainsmokers</p>
+					<p>All rights reserved</p>
+				</section>
+			</div>
 
 			<form action="#" method="post">
 				<label>Join to newsletter</label>
@@ -54,7 +120,6 @@
 				<input type="submit" value="Send" ">
 			</form>
 
-			<!-- Las listas siempre tienen que estar adentro de <nav></nav> ? -->
 			<ul>
 				<li>
 
@@ -102,5 +167,8 @@
 				</li>
 			</ul>
 		</footer>
+
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
 </html>

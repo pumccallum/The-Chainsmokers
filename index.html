@@ -1,40 +1,52 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4, minimum-scale=1">
 	<title>The Chainsmokers</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet"> -->
+
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<header>
+		<i class="fas fa-bars"></i>
 		<nav>
 			<ul>
-				<li>
-					<a href="index.html" class="menu">HOME</a>
+				<i class="fas fa-times"></i>
+				<li class="now"> 
+					<a href="index.html" >HOME</a>
 				</li>
 				<li>
 					<a href="shows/shows.html"  class="menu">SHOWS</a>
 				</li>
 				<li>
-					<a href="albums/albums.html"  class="menu">ALBUMS</a>
+					<a href="albums/albums.html"  class="menu">ALBUM</a>
 				</li>
 				<li>
 					<a href="videos/videos.html"  class="menu">VIDEOS</a>
 				</li>
 				<li>
-					<a href="store/store.html"  class="menu">STORE</a>
+					<a href="https://store.thechainsmokers.com/" target="_blank" class="menu">STORE</a>
 				</li>
 				<li>
 					<a href="contact/contact.html"  class="menu">CONTACT</a>
 				</li>
 				<li>
-					<a href="sign_in/sign_in.html"  class="menu">SIGN IN</a>
+					<a href="sign_in/sign_in.html"  class="menu">ENTER</a>
+
+					<ul class="submenu">
+						<li><a href="sign_in/sign_in.html" class="menu">SIGN IN</a></li>
+						<li><a href="sign_in/sign_up.html" class="menu">SIGN UP</a></li>
+					</ul>
+
 				</li>
 			</ul>
 		</nav>	
@@ -42,55 +54,154 @@
 	</header>
 	<main>
 		<!-- <h1 class="page_tittle">THE CHAINSMOKERS</h1> -->
-		
-		<img src="imagenes/name.png" alt="The Chainsmokers" class="tcm_logo">	
+		<section class="tittle">
+			<img src="imagenes/name.png" alt="The Chainsmokers" class="tcm_logo">	
+		</section>
 
-		<article>
-			<h1 class="artist">ALEX PALL</h1>
-			<img src="imagenes/alex_pall.jpg" alt="Alex Pall">
-			<p>Alex Pall was born and raised in Westchester, NY. He was working at an art gallery in Manhattan by day and DJ by night when his manager, Adam Alpert, introduced him to Drew to form The Chainsmokers as you know them today. In addition to music production, Alex is a song writer and pianist. When he’s not traveling the globe on The Chainsmokers’ tour, he lives in Los Angeles with his Golden Retriever Cheddar.</p>
-			<a href="https://www.instagram.com/alexpall/" target="_blank">
-				<i class="fab fa-instagram"></i>
-			</a>
-			<a href="https://www.facebook.com/AlexPall" target="_blank">
-				<i class="fab fa-facebook-square"></i>
-			</a>
-		</article>
+		<div class="artist_container">
+			<article class="art_der">
+				<h1 class="artist">DREW TAGGAT</h1>
+				<img src="imagenes/drewtaggat.jpg" alt="Drew Taggat">
+				<p>Drew Taggart grew up in Freeport, Maine and attended Syracuse University where he studied music business. While he had always been interested in music, he was first introduced to dance music at 15 when he was traveling abroad in Argentina. Upon graduating from college he was introduced to Alex Pall by their manager Adam Alpert and together formed The Chainsmokers. In addition to his work with The Chainsmokers, Drew is also a successful songwriter/producer who has lent his talents to other artists as well.</p>
+				<section class="artist_link">
+					<a href="https://www.instagram.com/drewtaggart/" target="_blank">
+						<i class="fab fa-instagram big_button5"></i>
+					</a>
+					<a href="https://twitter.com/drewtaggart" target="_blank">
+						<i class="fab fa-twitter big_button5"></i>
+					</a>
+				</section>
+			</article><!-- 
 
-		<article>
-			<h1 class="artist">DREW TAGGAT</h1>
-			<img src="imagenes/drew_taggat.jpg" alt="Drew Taggat">
-			<p>Drew Taggart grew up in Freeport, Maine and attended Syracuse University where he studied music business. While he had always been interested in music, he was first introduced to dance music at 15 when he was traveling abroad in Argentina. Upon graduating from college he was introduced to Alex Pall by their manager Adam Alpert and together formed The Chainsmokers. In addition to his work with The Chainsmokers, Drew is also a successful songwriter/producer who has lent his talents to other artists as well.</p>
-			<a href="https://www.instagram.com/drewtaggart/" target="_blank">
-				<i class="fab fa-instagram"></i>
-			</a>
-			<a href="https://twitter.com/drewtaggart" target="_blank">
-				<i class="fab fa-twitter"></i>
-			</a>
-		</article>
+		 --><article class="art_izq">
+				<h1 class="artist">ALEX PALL</h1>
+				<img src="imagenes/alexpall.jpg" alt="Alex Pall"> 
+				<p>Alex Pall was born and raised in Westchester, NY. He was working at an art gallery in Manhattan by day and DJ by night when his manager, Adam Alpert, introduced him to Drew to form The Chainsmokers as you know them today. In addition to music production, Alex is a song writer and pianist. When he’s not traveling the globe on The Chainsmokers’ tour, he lives in Los Angeles with his Golden Retriever Cheddar.</p>
+				<section class="artist_link">
+					<a href="https://www.instagram.com/alexpall/" target="_blank">
+						<i class="fab fa-instagram big_button5"></i> 
+					</a>
+					<a href="https://www.facebook.com/AlexPall" target="_blank">
+						<i class="fab fa-facebook-square big_button5"></i>
+					</a>
+				</section>
+			</article>
+		</div>	
 
-			<h2 class="tittle2">NEWS</h2>
+		<section class="last_release">
+			<h2 class="tittle2">Last release</h2>
+			<a href="albums/albums.html" class="all_shows big_button"> + All albums</a>
+			<div class="last_release_container">
+				<section class="songs">
+					<a class="get_now" href="http://smarturl.it/SickBoy" target="_blank">
+						<img src="imagenes/album1.jpg" class="song_img transform_song">
+					</a>
+					<p class="song_name">Sick boy</p>
+					<p class="out_now">Out now</p>
+					<a class="get_now" href="http://smarturl.it/SickBoy" target="_blank" class="big_button2">Get now</a>
+				</section><!-- 
 
-			<h2 class="tittle2">LAST RELESE</h2>
+			 --><section class="songs">
+			 		<a class="get_now" href="http://smarturl.it/TCSsomebody" target="_blank">
+						<img src="imagenes/album2.jpg" class="song_img transform_song">
+					</a>
+					<p class="song_name">Some body</p>
+					<p class="out_now">Out now</p>
+					<a class="get_now" href="http://smarturl.it/TCSsomebody" target="_blank" class="big_button2">Get now</a>
+				</section><!--
+
+			 --><section class="songs">
+					<a class="get_now" href="http://smarturl.it/EverybodyHatesMe" target="_blank">
+						<img src="imagenes/album3.jpg" class="song_img transform_song">
+					</a>
+					<p class="song_name">Everybody hates me</p>
+					<p class="out_now">Out now</p>
+					<a class="get_now" href="http://smarturl.it/EverybodyHatesMe" target="_blank" class="big_button2">Get now</a>
+				</section><!-- 
+
+			 --><section class="songs">
+			 		<a class="get_now" href="http://smarturl.it/YouOweMe" target="_blank">
+						<img src="imagenes/album4.jpg" class="song_img transform_song">
+					</a>
+					<p class="song_name">You owe me</p>
+					<p class="out_now">Out now</p>
+					<a class="get_now" href="http://smarturl.it/YouOweMe" target="_blank" class="big_button2">Get now</a>
+				</section>
+			</div>
+		</section> 
+
+		<section class="instagram" >
+			<h2 class="tittle2">Instagram photos</h2>
+			<a href="https://www.instagram.com/thechainsmokers/" class="all_shows big_button"> + Go to instagram</a>
 			
-			<h2 class="tittle2">NEXT SHOWS</h2>
+			<!-- hacer lista, y a cada li dar acncho y alto y overflow:hidden -->
+			<ul class="instagram_container">
+
+				<li><a href="https://www.instagram.com/p/Bk20towB1L5/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/113d25afd9459733bdabb6f7b8bbb5ed/5BE9A196/t51.2885-15/e35/35575209_2073179789563122_78789710461272064_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/BkvrkhdB-QD/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/80a8a5cfb798db44b08a70eb952da638/5BD3966D/t51.2885-15/e35/36147986_1940753496216389_3103435366841974784_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/BktBBtrBno_/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/64722da33c8a5f91d0bd29d211e445f6/5BDD0730/t51.2885-15/e35/35277775_1053732374791876_7571182308032512000_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/Bkq5mCpBrgo/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/cebd82da67b231db9cf61a9072e73cbc/5BD46F1C/t51.2885-15/e35/35487929_230798337718932_6556802103203856384_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/BkqSrJlBhGZ/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/2174fdea5f8ede62a28df4f9b9ca74dd/5BD04A9B/t51.2885-15/e35/35325135_600574093676928_4183943546744602624_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/Bk20towB1L5/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/6090552db983e63b76fd2051ed07502a/5BD5F9F1/t51.2885-15/e35/35366212_1695060887275825_7901404497832837120_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/Bkg1x-8hMQl/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/b3387fe21127180e4d15ba78b067d145/5BE5C383/t51.2885-15/sh0.08/e35/s640x640/35425331_423440034728238_5435788520524349440_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+				<li><a href="https://www.instagram.com/p/Bkey8mOh09i/?taken-by=thechainsmokers" target="_blank">
+					<img src="https://scontent-eze1-1.cdninstagram.com/vp/97332eb77f2c945090e19f1325e86b12/5BC747F7/t51.2885-15/e35/35616310_1349019211908788_1356864474719453184_n.jpg?efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV9pZyJ9" alt="Instagram image" class="instagram_img transform_ig">
+				</a></li>
+			</ul>
+			
+		</section>
+
+		<section class="watch">
+			<h2 class="tittle2">Watch</h2>
+			<a href="videos/videos.html" class="all_shows big_button"> + All videos</a>
+			<div class="watch_container">
+				<video src="video/video1.mp4" controls></video>
+			</div>
+			<p>Somebody ft. Drew Love (Rory Kramer Vision)</p>
+		</section>
+
+		<section class="next_show">
+			<h2 class="tittle2">Next show</h2>
+			<a href="shows/shows.html" class="all_shows big_button"> + All shows</a>
+			<h2 class="next_show_place">KÜÇÜKÇIFTLIK PARK</h2>
+			<p>Friday, August 3, 2018 </p>
+			<p>ISTANBUL, TURKEY</p>
+			<a href="https://www.google.ca/maps/place/Kucukciftlik+Park/@41.0431996,28.9905763,17z/data=!3m1!4b1!4m5!3m4!1s0x152b093ad92bc575:0x3c9102a7997bccdb!8m2!3d41.0431996!4d28.992765?hl=en" target="_blank" class="big_button4">View map</a>
+			<a href="http://www.bandsintown.com/event/17026623/buy_tickets?app_id=thechainsmokers.com&artist=The+Chainsmokers&came_from=67" target="_blank" class="big_button4">Buy tickets</a>
+		</section>
 	</main>
 
-	<footer>
-		<p>Copyright © 2018 The ChaLogo de The Chainsmokersinsmokers</p>
-		<p>All rights reserved</p>
-		<img src="imagenes/logo.jpg" alt="">
+	<footer class="footer_container">
+		<div>
+			<img src="imagenes/logo.jpg" alt="The Chainsmokers Logo">
+			<section>
+				<p>Copyright © 2018 The Chainsmokers</p>
+				<p>All rights reserved</p>
+			</section>
+		</div>
 
 		<form action="#" method="post">
 			<label>Join to newsletter</label>
 			<input type="email" name="email_nl" placeholder="Enter your e-mail" required>
-			<input type="submit" value="Send" ">
+			<input type="submit" value="Send" class="send" >
 		</form>
 
-		<!-- Las listas siempre tienen que estar adentro de <nav></nav> ? -->
 		<ul>
 			<li>
-
 				<a href="https://itunes.apple.com/us/artist/the-chainsmokers/id580391756?ign-mpt=uo%3D4" target="_blank">
 					<i class="fab fa-itunes-note"></i>
 				</a>
@@ -136,5 +247,10 @@
 		</ul>
 	</footer>
 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
+
+
+<!-- Dominio de página https://punum.000webhostapp.com/contact/contact.html -->

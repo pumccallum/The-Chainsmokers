@@ -2,6 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4, minimum-scale=1">
 		<title>The Chainsmokers Contact</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -13,63 +14,86 @@
 	</head>
 	<body>
 		<header>
+			<i class="fas fa-bars"></i>
 			<nav>
 				<ul>
+					<i class="fas fa-times"></i>
 					<li>
-						<a href="../index.html">HOME</a>
+						<a href="../index.html" class="menu">HOME</a>
 					</li>
 					<li>
-						<a href="../shows/shows.html">SHOWS</a>
+						<a href="../shows/shows.html" class="menu">SHOWS</a>
 					</li>
 					<li>
-						<a href="../albums/albums.html">ALBUMS</a>
+						<a href="../albums/albums.html" class="menu">ALBUM</a>
 					</li>
 					<li>
-						<a href="../videos/videos.html">VIDEOS</a>
+						<a href="../videos/videos.html" class="menu">VIDEOS</a>
 					</li>
 					<li>
-						<a href="../store/store.html">STORE</a>
+						<a href="https://store.thechainsmokers.com/" target="_blank" class="menu">STORE</a>
 					</li>
-					<li>
+					<li class="now">
 						<a href="contact.html">CONTACT</a>
 					</li>
 					<li>
-						<a href="../sign_in/sign_in.html">SIGN IN</a>
+						<a href="../sign_in/sign_in.html" class="menu">ENTER</a>
+
+						<ul class="submenu">
+							<li><a href="../sign_in/sign_in.html" class="menu">SIGN IN</a></li>
+							<li><a href="../sign_in/sign_up.html" class="menu">SIGN UP</a></li>
+						</ul>
+
 					</li>
 				</ul>
 			</nav>
-			<h1 class="page_tittle">CONTACT</h1>
 		</header>
-		<main>			
-			<form action="#" method="post">
-				<legend>Send a message</legend>
-				<input type="text" name="name" placeholder="Enter your name" required>
-				<input type="email" name="email" placeholder="Enter your e-mail" required>
-				<textarea name="message" placeholder="Enter your message" cols="60" rows=7 required></textarea>
-				<input type="submit" value="Send">
-			</form>
+		<main>
+			<section class="new_tittle">
+				<h1 class="page_tittle">CONTACT</h1>
+			</section>
+			<section class="content2">
+				<form action="#" method="post">
+					<h2 class="tittle3">Send a message</h2>
+					<input type="text" name="name" placeholder="Enter your name" required>
+					<input type="email" name="email" placeholder="Enter your e-mail" required>
+					<textarea name="message" placeholder="Enter your message" cols="40" rows=7 required></textarea>
+					<input type="submit" value="Send" class="send">
+				</form>
+			</section>	
 
-			<img src="../imagenes/disruptor_records.png" alt="Distuptor Records Logo">
-			
 			<div class="contact_mail">
-				<p>Management
-				Adam Alpert
-				<a href="#">adam@disruptorrecords.com</a></p>
+				<img src="../imagenes/disruptor_records.png" alt="Distuptor Records Logo">
 
-				<p>Press
-				Enes Kolenovic
-				<a href="#">ek@disruptormgmt.com</a></p>
+				<section>
+					<p class="type">Management</p>
+					<p class="name">Adam Alpert</p>
+					<a href="#" class="big_button">adam@disruptorrecords.com</a>
+				</section>
 
-				<p>Booking
-				CAA
-				<a href="#">thechainsmokers@caa.com</a></p>
+				<section>
+					<p class="type">Press</p>
+					<p class="name">Enes Kolenovic</p>
+					<a href="#" class="big_button">ek@disruptormgmt.com</a></p>
+				</section>
+
+				<section>
+					<p class="type">Booking</p>
+					<p class="name">CAA</p>
+					<a href="#" class="big_button">thechainsmokers@caa.com</a></p>
+				</section>
 			</div>
 			
+			
 		</main>
-		<footer>
-			<p>Copyright © 2018 The ChaLogo de The Chainsmokersinsmokers</p>
-			<p>All rights reserved</p>
-			<img src="imagenes/logo.jpg" alt="">
+		<footer class="footer_container">
+			<div>
+				<img src="../imagenes/logo.jpg" alt="The Chainsmokers Logo">
+				<section>
+					<p>Copyright © 2018 The Chainsmokers</p>
+					<p>All rights reserved</p>
+				</section>
+			</div>
 
 			<form action="#" method="post">
 				<label>Join to newsletter</label>
@@ -125,5 +149,8 @@
 				</li>
 			</ul>
 		</footer>
+
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
 </html>

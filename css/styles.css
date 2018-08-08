@@ -1,19 +1,38 @@
 * {
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 	box-sizing: border-box;
 }
+
 body {
-	font-family: 'roboto condensed', sans-serif
+	font-family: 'roboto condensed', sans-serif;
+	/*background-color: gray;*/
+	/*background: url(../imagenes/fondo4.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;*/
+	background: #59544a
 }
 
 header {
-	background: lightgray;
-	padding: 20px;
+	background: #22312E; 
+	background: url(../imagenes/fondo3.jpg);
+	background-size: cover;
+	position: fixed;
+	width: 100vw;
+	z-index: 1;
+}
+
+header i.fa-bars ,
+header i.fa-times  {
+	display: none;
 }
 
 header nav ul {
 	text-align: center;
+}
+
+header nav ul li {
+	display:inline-block;
 }
 
 header nav ul li a {
@@ -24,48 +43,1032 @@ header nav ul li a {
 	margin: 5px 20px;
 }
 
-.tcm_logo {
-	transform: scale(0.35);
-	margin: auto;
-}
-
-.page_tittle {
-	font-family: 'Amatic SC', sans-serif; 
-	font-weight: bold; 
-	font-size: 6rem; 
-	color: #2B2C28; 
-	text-align: center; 
-}
-.artist	{
-	font-family: 'Amatic SC', sans-serif; 
-	font-weight: bold; 
-	font-size: 2rem; 
-	color: #51524F;
-}
-
-.tittle2 {
-	font-family: 'Amatic SC', sans-serif; 
-	font-weight: bold; 
-	font-size: 3rem; 
-	color: #51524F;
-	text-align: center;
-}
-
-.show_place {
-	font-family: 'Amatic SC', sans-serif; 
-	font-weight: bold; 
-	font-size: 2rem; 
-	color: #51524F;
+header nav ul li.now {
+	background: url(../imagenes/fondo4-2.jpg); /*como hago para que ocupe de arriba a abajo en el header?*/
+	height: 100%;
+	padding: 20px;
 }
 
 ul {
 	list-style: none;
 }
 
-.contact_mail {
-	text-align: center
+header nav ul li {
+	position: relative;
 }
 
-header nav ul li {
-	display:inline-block;
+header nav ul li:hover .submenu {
+	display: block; 
+}
+
+header nav ul li ul.submenu {
+	background: url(../imagenes/fondo4.jpg);
+	position: absolute;
+	left: -12%;
+	bottom: -310%;
+	width: 130%;
+	padding: 5px 0;
+	margin-top: 40px;
+
+	display: none;
+}
+
+header nav ul li ul.submenu li {
+	display: block;
+	padding: 5px
+}
+
+main section.tittle {
+	background: url(../imagenes/fondo1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+
+}
+
+.tcm_logo { /*no se por qué me queda tanto espacio al rededor, y no está centrado con el menú*/
+	width: 50%;
+	/*transform: scale(0.5);*/
+	margin: auto;
+	margin: 70px;
+	margin-top: 110px;
+	/*text-align: center;*/
+	/*margin-top: 5px;*/
+
+} 
+
+.page_tittle {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 8rem; 
+	color: white; 
+	text-align: center;
+	text-transform: uppercase; 
+	margin-top: 40px
+}
+
+/*h1, p {
+	display: inline;
+}*/
+
+.artist_container {
+	display: flex;
+	/*flex-direction: row;*/
+	/*height: 70vh;*/
+}
+
+.art_izq {
+	background: url(../imagenes/fondo11.jpg);
+	/*background: url(../imagenes/alex_pall.jpg);*/
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	background-size: cover;
+	padding: 38px;
+}
+
+/*.art_izq:hover {
+	background: url(../imagenes/fondo4-3.jpg);
+}*/
+
+.art_der {
+	background: url(../imagenes/fondo11.jpg);
+	/*background: url(../imagenes/drew_taggat.jpg);*/
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	background-size: cover;
+	padding: 38px;
+	
+}
+
+/*.art_izq:hover {
+	background: url(../imagenes/fondo4-4.jpg);
+}*/
+
+main div article h1.artist	{
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 4rem; 
+	color: #252625;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: 50px
+}
+
+main article {
+	position: relative;
+}
+
+main article:hover img {
+	display: none;
+}
+
+main article img {
+	/*float: left;
+	margin: auto; no las puedo centrar*/
+	/*margin-left: 270px;
+	margin-bottom: 20px;
+	border-radius: 50%*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50vw;
+}
+
+main div article p {
+	padding:40px 60px;
+	text-align: center;
+	color: #252625;
+	font-size: 1.5rem;
+	line-height: 140%;
+	/*letter-spacing: 1px*/
+}
+
+main article a { 
+	margin: auto; /*No lo puedo centrar*/
+ 	text-decoration: none;
+}
+
+main article a i {
+	color: #252625;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 20px;
+	
+	/*margin: auto;*/
+}
+
+.artist_link {
+	text-align: center;
+}
+
+/*main article section.artist_link {
+	display: inline-block;
+	margin: auto;
+}*/
+
+main section.last_release {
+	/*padding: 0 50px 20px 50px;*/
+	padding: 30px;
+	background: url(../imagenes/fondo4.jpg);
+	background-size: cover;
+	background-position: bottom; 
+	/*height: 100vh*/
+}
+
+.tittle2 {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 5rem; 
+	color: white;
+	text-align: center;
+	padding: 15px 0 0 0;
+	text-transform: uppercase;
+	/*margin-top: 50px*/
+}
+
+main section.last_release a.all_shows {
+	margin-bottom: 30px
+}
+
+main section div.last_release_container {
+	display: flex;
+	justify-content: center;
+}
+
+main section.songs {
+	padding: 10px 0;
+	display: inline-block;
+	width: 25%
+}
+
+.song_img {
+	width: 70%;
+	border-radius: 8px
+	/*margin:auto; no lo puedo centrar*/
+	/*margin-left: 1vw*/
+}
+
+.song_name {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+	/*font-weight: bold;*/
+	color: white;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	font-family: 'Amatic SC', sans-serif;
+	padding: 10px
+}
+
+.out_now {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+main section a.get_now {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	/*background: #b7b1a5;*/
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+main section.instagram {
+	padding: 30px;
+	background: url(../imagenes/fondo10.jpg);
+	background-size: cover;
+}
+
+main section.instagram h2.tittle2 {
+	color: #2d2c2b;
+}
+
+main section.instagram a.all_shows {
+	color: #2d2c2b; 
+	
+}
+
+main section.instagram ul.instagram_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	padding: 30px 30px;
+}
+
+
+
+main section.instagram a img.instagram_img { /*como hago para que solo se vea 250x250px sin deformarla, si la imagen no es cuadrada*/
+	height: 40vh;
+	padding: 20px
+}
+
+main section.watch { 
+	background: black;
+	padding: 30px;
+	height: 100%;
+	/*clear: both;*/
+}
+
+main section.watch div.watch_container {
+	display: flex;
+	justify-content: center;
+}
+
+main section.watch video {
+	/*padding: 30px;*/
+	width: 100%;
+	/*text-align: center;*/
+	/*float: left;*/
+	/*margin: auto;*/
+	padding: 30px 0;
+}
+
+
+main section.watch p {
+	font-family: 'roboto condensed', sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	color: white;
+	padding: 20px
+}
+
+main section.next_show {
+	background: url(../imagenes/fondo8.jpg);
+	/*background: #db753b;*/
+	padding: 30px;
+	background-position: bottom;
+	background-size: cover;
+}
+
+main section a.all_shows {
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.6rem;
+	text-transform: uppercase; 
+}
+
+/*main section a.all_shows h2*/.next_show_place {
+	color: #ede6e1;
+	font-size: 6rem;
+	text-align: center;
+	font-family:  'Amatic SC', sans-serif, bold; 
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+main section.next_show p {
+	text-align: center;
+	color: white;
+	padding: 5px;
+	font-size:1.7rem;
+	text-transform: uppercase;
+}
+
+main section.next_show a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	letter-spacing: 1.4px;
+	font-size: 1.4rem
+}
+
+footer {
+	background: url(../imagenes/fondo4-5.jpg);
+	background-size: cover;
+	padding: 20px; 
+	color: white
+}
+
+.footer_container {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer img {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+}
+
+footer section {
+	display: inline-block;
+	padding: 10px;
+}
+
+footer section p {
+ 	font-family: 'roboto condensed', sans-serif;
+	font-size: 1rem	
+}
+
+footer form {
+	display: inline-block;
+	/*float: right;
+	margin:auto; no lo puedo centrar*/
+	text-align: center;
+}
+
+footer form label {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 2rem;
+	margin-right: 10px
+}
+
+footer form input {
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin:auto;
+	margin-bottom: 20px;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1rem
+}
+
+footer form input.send {
+	font-size: 1.2rem;
+	padding: 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/*margin-top: 30px*/
+	margin-left: 5px
+}
+
+footer ul {
+	/*display: inline-block;*/
+	/*float: right;*/
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+footer ul li a i {
+	font-size: 1.8rem;
+	color: white;
+	padding: 10px
+}
+
+
+/*SHOWS*/
+
+main section.new_tittle {
+	background: url(../imagenes/fondo1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 50px;
+}
+
+ul.content {
+	/*background: #283633;*/
+	background: url(../imagenes/fondo4.jpg);
+	background-size: cover;
+	padding: 40px;
+}
+
+ul.content li {
+	text-align: center;
+	padding: 20px;
+}
+
+.show_place {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 2.5rem; 
+	color: #ede8e3;
+	display: inline-block;
+	letter-spacing: 1px
+}
+
+.show_day {
+	display: inline-block;
+	color: white;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+ul.content li a/*.big_button*/ {
+	text-decoration: none;
+	color: white;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.5rem;
+	padding: 10px;
+	margin: 0 5px;
+	background: url(../imagenes/fondo4-2.jpg);
+	border-radius: 4px
+}
+
+
+/*ALBUMS*/
+
+main section.content {
+	background: url(../imagenes/fondo4-3.jpg);
+	background-size: cover;
+	padding: 40px;
+	height: 100vh;
+}
+
+main section.content a.album_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.newalbum{
+	margin-top: 50px;
+}
+
+main section.content a img.album_img {
+	margin: auto; 
+	width: 35%;
+	display: block;
+	text-align: center;
+	border-radius: 7%;
+	padding: 30px;
+	
+}
+
+main section.content a.get {
+	display:block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	/*background: #b7b1a5;*/
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'Amatic SC', sans-serif;
+	letter-spacing: 10px;
+	font-weight: bold;
+	/*background: grey; no se como hacer que quede solo al rededor del "GET"*/
+	/*padding: 10px;*/
+}
+
+/*VIDEOS*/
+
+ul.content li.video a {
+	margin: 0;
+	background: none;
+	border-radius: 0
+}
+
+main ul.content li.video {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+
+}
+
+main ul.content li a img.video_img {
+	width: 100%;
+	border-radius: 8px
+	/*padding: 5px;*/
+}
+
+main ul.content li p {
+	color: white;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.5rem;
+	padding: 15px;
+}
+
+
+/*CONTACT*/
+
+main section.content2 {
+	background: url(../imagenes/fondo4.jpg);
+	background-size: cover;
+	padding: 60px;
+}
+
+main section.content2 form h2.tittle3 {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 3rem; 
+	color: white;
+	text-align: center;
+	padding: 15px 0 0 0;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+main form input,
+main form textarea {
+	display: block;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	resize: none;
+	margin:auto;
+	margin-bottom: 20px;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1rem;
+	/*width: 50%*/
+}
+
+main form input.send {
+	font-size: 1.2rem;
+	padding: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 30px
+}
+
+main div.contact_mail {
+	background: url(../imagenes/fondo10-01.jpg);
+	text-align: center;
+	padding: 120px;
+	height: 100vh
+}
+
+
+main div.contact_mail img {
+	width: 400px;
+	padding-top: 20px
+}
+
+main div.contact_mail section {
+	padding: 30px
+}
+
+main div.contact_mail p.type {
+	font-family: 'Amatic SC', sans-serif; 
+	font-weight: bold; 
+	font-size: 3rem; 
+	color: #2d2c2b;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main div.contact_mail p.name {
+	font-family:  'roboto condensed', sans-serif;
+	font-size: 1.5rem; 
+	color: #2d2c2b;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px
+}
+
+main div.contact_mail a {
+	text-decoration: none;
+	color: #2d2c2b;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.7rem;
+	padding: 40px
+}
+
+/*SIGN IN*/
+
+main section.content2 p {
+	color: white;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 2rem;
+	padding:10px;
+	padding-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main section.content2 a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 100px
+}
+
+/*SIGN UP*/
+
+/*main section.content2 form input {
+	text-align: center;
+	color: #2d2c2b;
+	font-family: 'roboto condensed', sans-serif;
+}*/
+
+main section form div.sex {
+	display: block;
+	text-align: center;
+}
+
+main section.content2 form label {
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	padding: 0px 15px;
+	font-family: 'roboto condensed', sans-serif;
+	letter-spacing: 1px;
+}
+
+
+main section.content2 form .line {
+	display: inline-block;
+}
+
+main section.content2 form label.line {
+	display: block;
+	text-align: center;
+}
+
+main section.content2 form label a {
+	padding:5px;
+	display: inline-block;
+}
+
+/*THANK YOU*/
+
+main section.content3 {
+	background: url(../imagenes/fondo4.jpg);
+	height: 90vh;
+	padding: 50px
+}
+
+main section.content3 h2 {
+	font-size: 8rem;
+	padding-top: 20vh
+}
+
+main section.content3 p {
+	color: white;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	
+}
+
+main section.content3 a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 80px;
+	
+
+}
+
+
+/*TRANSFORMATIONS*/
+
+.transform_song:hover {
+	transform: scale(1.1);
+}
+
+.transform_ig:hover {
+	transform: scale(1.2);
+}
+
+.transform_album:hover{
+	transform: scale(1.1);
+}
+
+.big_button:hover {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.big_button2:hover {
+	font-size: 3rem;
+	font-weight: bold;
+} /*No me deja*/
+
+.big_button3:hover {
+	font-size: 3rem
+} /*No me deja*/
+
+.big_button4:hover {
+	font-size: 2rem;
+}
+
+.big_button5:hover {
+	font-size: 2rem;
+}
+
+.menu:hover {
+	/*background: url(../imagenes/fondo4.jpg);
+	padding: 5px*/
+	color:#9f3b2b;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+	main article img {
+		display: none;
+	}
+
+	.art_izq {
+		background: url(../imagenes/fondo12.jpg)
+	}
+
+	main section.instagram a img.instagram_img {
+	    height: 27vh;
+	}
+
+	footer form {
+   		display: none;
+   	}
+
+   	.footer_container {
+     	display: block; 
+    }
+
+    footer ul {
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+	main section.content a img.album_img {
+	    width: 75%;
+	    border-radius: 11%;
+	}
+
+	main section.content {
+		height: 90vh;
+	}
+
+	/*ul.content {
+	    height: 67vh;
+	}*/
+
+	main section.content2 {
+        height: 70vh;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+	header i.fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 25px;
+		padding: 15px 25px;
+	}
+
+	header nav ul li {
+		display: block;
+		padding: 10px
+	}
+
+	header nav ul li.now {
+		padding: 5px
+	}
+
+	header nav {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: url(../imagenes/fondo3.jpg); 
+		left: -100%;
+		top: 0;
+
+		transition: all 1s;
+	}
+
+	header nav i.fa-times {
+		display: block;
+		color: #fff;
+		font-size: 25px;
+		margin: 20px;
+		text-align: left;
+	}
+
+	header nav ul li ul.submenu {
+		display: none;
+	}
+
+	header nav ul li:hover .submenu{
+		display: none;
+	}
+
+	.tcm_logo {
+	    width: 80%;
+        margin: 30px;
+   		margin-top: 80px;
+ 	}
+
+ 	.artist_container {
+ 		display: block;
+ 	}
+
+	main article img {
+		display: none;
+	}
+
+	.art_der {
+		width: 100vw;
+	}	
+
+	.art_izq {
+		width: 100vw;
+		background: url(../imagenes/fondo12.jpg)
+	}
+
+	main div article h1.artist{
+		margin-top: 0;
+	}
+
+	main div article p {
+		padding: 20px;
+		font-size: 1.2rem;
+	}
+
+	.tittle2 {
+		font-size: 4rem;
+		padding: 0
+	}
+
+	main section div.last_release_container {
+		display: block;
+		margin-top: 20px;
+	}
+
+	main section.songs {
+		width: 100%;
+	}
+
+	.song_name {
+		margin-top: 0;
+	}
+	main section.instagram ul.instagram_container {
+        /* padding: 30px 30px; */
+    }
+
+	main section.instagram a img.instagram_img {
+	    height: initial; 
+	    padding: 10px;
+	    width: 90vw;
+
+	}
+
+	main section.watch div.watch_container {
+      display: block;
+ 	}
+
+ 	.next_show_place {
+    	font-size: 3.2rem;
+	}
+
+	main section.next_show p {
+    	padding: 2px;
+   		font-size: 1.3rem;
+   		margin-bottom: 5px;
+   	}
+
+   	footer form {
+   		display: none;
+   	}
+
+   	.footer_container {
+     display: block; 
+    }
+
+    footer ul {
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	main section.new_tittle {
+   		padding: 25px;
+   	}
+
+   	.page_tittle {
+	    font-size: 6rem;
+	    margin-top: 36px;
+	}
+
+	ul.content {
+		padding: 10px;
+	}
+
+	ul.content li {
+    	padding: 28px;
+    }
+
+    main section.content {
+    	padding: 14px;
+    	height: 88vh;
+    }
+
+    main section.content a img.album_img {
+    	width: 100%;
+    	border-radius: 11%;
+    }
+
+    main ul.content li.video {
+    	width: 95%;
+    }
+
+    main div.contact_mail {
+    	padding: 15px;
+    	height: 85vh;
+    }
+
+    main div.contact_mail img {
+    	width: 80vw;
+	}
+
+	main div.contact_mail p.type {
+   		font-size: 2rem;
+    }
+
+    main div.contact_mail p.name {
+  		font-size: 1rem;
+  		padding: 5px;
+    }
+
+    main div.contact_mail a {
+		font-size: 1.7rem;
+	}
+
+	main form input, main form textarea {
+		width: 100%;
+	}
+
+	main section.content2 form label {
+		margin-bottom: 15px;
+	}
+
+	main section.content2 form .line {
+		margin-bottom: 5px;
+	}
+
+	main section.content3 h2 {
+	    font-size: 6rem;
+	    padding-top: 10vh;
+	}
+
+	main section.content3 {
+		height: 80vh;
+	}
+
 }
